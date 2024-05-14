@@ -71,6 +71,25 @@
     font-weight: 100;
     color: var(--secondary-color);
 }
+.main-content {
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 80px;
+
+    animation: mainContent 2s 0.5s ease-in-out;
+}
+@keyframes mainContent {
+    0% {
+        transform: translateY(-600px);
+    }
+    100% {
+        transform: translateY();
+    }
+}
+
 .loader {
     width: 100%;
     height: 100%;
